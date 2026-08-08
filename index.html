@@ -1,189 +1,1158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Shifa Siddiqui | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">Shifa.</div>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- =========================
+            NAVBAR
+    ========================== -->
 
-    <!-- Hero Section -->
+    <header>
+
+        <nav>
+
+            <a href="#home" class="logo">
+                Shifa<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+
+                <li>
+                    <a href="#certificates">Certificates</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+            <!-- Mobile Menu -->
+
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+            HERO SECTION
+    ========================== -->
+
     <section class="hero" id="home">
 
-        <div class="left">
-            <h3>Hello, It's Me</h3>
+        <div class="hero-content">
 
-            <h1>Shifa Siddiqui</h1>
-
-            <p>
-                I'm a Computer Engineering Student passionate
-                about Web Development and Java Programming.
+            <p class="small-heading">
+                Hello, I'm
             </p>
+
+            <h1>
+                Shifa Siddiqui
+            </h1>
+
+            <h2>
+                I'm a <span id="typing"></span>
+            </h2>
+
+            <p class="hero-text">
+                A Computer Engineering student passionate about
+                Web Development, Java Programming and building
+                creative digital experiences.
+            </p>
+
+
+            <!-- Buttons -->
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="btn">
+                    Hire Me
+                </a>
+
+                <a href="resume/Shifa_Siddiqui_Resume.pdf"
+                    download
+                    class="btn btn-outline">
+
+                    Download Resume
+
+                </a>
+
+            </div>
+
+
+            <!-- Social Links -->
 
             <div class="social">
-                <a href="https://github.com/shifasiddiqu30" target="blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/shifa-siddiqui-79617a383" target="blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/sidd.shifa.30" target="blank"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:shifasiddiqui30112006@gmail.com"><i class="fas fa-envelope"></i></a>
+
+                <!-- GitHub -->
+
+                <a href="https://github.com/shifasiddiqu30"
+                    target="_blank"
+                    aria-label="GitHub">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+
+                <!-- LinkedIn -->
+
+                <a href="#"
+                    target="_blank"
+                    aria-label="LinkedIn">
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                </a>
+
+
+                <!-- Instagram -->
+
+                <a href="#"
+                    target="_blank"
+                    aria-label="Instagram">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+
+                <!-- Email -->
+
+                <a href="mailto:shifasiddiqui30112006@gmail.com"
+                    aria-label="Email">
+
+                    <i class="fas fa-envelope"></i>
+
+                </a>
+
             </div>
 
-            <a href="resume.pdf/Shifa_Siddiqui_Resume.pdf" download class="btn">Download Resume</a>
         </div>
 
-        <div class="right">
-            <img src="image/profile.jpg.jpeg" alt="Profile">
-        </div>
 
-    </section>
+        <!-- Profile Image -->
 
-    <!-- About Section -->
-    <section id="about" class="about">
+        <div class="hero-image">
 
-        <div class="about-content">
+            <div class="image-circle">
 
-            <h2>About Me</h2>
+                <img src="image/profile.jpg.jpeg"
+                    alt="Shifa Siddiqui">
 
-            <p>
-                Hello! I'm Shifa Siddiqui, a Computer Engineering Student
-                passionate about Web Development and Java Programming.
-            </p>
-
-            <p>
-                I enjoy building responsive websites, learning new
-                technologies, and improving my coding skills.
-            </p>
-
-            <p>
-                My goal is to become a Full Stack Developer and create
-                innovative software solutions that make a positive impact.
-            </p>
+            </div>
 
         </div>
 
     </section>
 
-<!-- Skills Section -->
-<section id="skills" class="skills">
 
-    <div class="skills-content">
 
-        <h2>My Skills</h2>
+    <!-- =========================
+            ABOUT SECTION
+    ========================== -->
+<!-- About Section -->
+<section id="about" class="about">
 
-        <div class="skills-box">
+    <!-- Heading -->
+    <div class="about-title">
+
+        <img src="image/profile.jpg.jpeg" alt="Shifa Siddiqui">
+
+        <div>
+            <p>Get To Know Me</p>
+            <h2>About <span>Me</span></h2>
+        </div>
+
+    </div>
+
+
+    <!-- About Content -->
+    <div class="about-content">
+
+        <h3>Hello! I'm Shifa Siddiqui 👋</h3>
+
+        <p>
+            I'm a Computer Engineering Student passionate about
+            Web Development, Java Programming and Software Development.
+        </p>
+
+        <p>
+            I enjoy creating responsive websites, learning new
+            technologies and building projects that improve my
+            practical coding skills.
+        </p>
+
+        <p>
+            Currently, I'm focusing on C, C++, Java, HTML, CSS,
+            JavaScript and Data Structures & Algorithms.
+        </p>
+
+
+        <!-- Information Cards -->
+        <div class="about-info">
+
+            <div class="info-card">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                    <h4>Education</h4>
+                    <p>Computer Engineering</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-code"></i>
+                <div>
+                    <h4>Interests</h4>
+                    <p>Web Development & Java</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-location-dot"></i>
+                <div>
+                    <h4>Location</h4>
+                    <p>Mumbai, India</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-rocket"></i>
+                <div>
+                    <h4>Goal</h4>
+                    <p>Full Stack Developer</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Currently Learning -->
+        <div class="currently-learning">
+
+            <h4>Currently Learning</h4>
+
+            <div class="learning-tags">
+                <span>C</span>
+                <span>C++</span>
+                <span>Java</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>DSA</span>
+            </div>
+
+        </div>
+
+
+        <!-- Resume -->
+        <a href="resume.pdf/Shifa_Siddiqui_Resume.pdf"
+           download
+           class="btn about-btn">
+
+            <i class="fas fa-download"></i>
+            Download Resume
+
+        </a>
+
+    </div>
+
+</section>
+
+
+                    
+
+
+    <!-- =========================
+            SKILLS SECTION
+    ========================== -->
+
+    <section class="skills section" id="skills">
+
+        <div class="section-title">
+
+            <p>What I Know</p>
+
+            <h2>
+                My <span>Skills</span>
+            </h2>
+
+        </div>
+
+
+        <div class="skills-container">
+
+
+            <!-- HTML -->
 
             <div class="skill-card">
+
                 <i class="fab fa-html5"></i>
+
                 <h3>HTML</h3>
+
+                <p>95%</p>
+
+                <div class="progress">
+
+                    <span class="html-progress"></span>
+
+                </div>
+
             </div>
 
+
+            <!-- CSS -->
+
             <div class="skill-card">
+
                 <i class="fab fa-css3-alt"></i>
+
                 <h3>CSS</h3>
+
+                <p>90%</p>
+
+                <div class="progress">
+
+                    <span class="css-progress"></span>
+
+                </div>
+
             </div>
 
+
+            <!-- JavaScript -->
+
             <div class="skill-card">
+
                 <i class="fab fa-js"></i>
+
                 <h3>JavaScript</h3>
+
+                <p>75%</p>
+
+                <div class="progress">
+
+                    <span class="js-progress"></span>
+
+                </div>
+
             </div>
 
+
+            <!-- Java -->
+
             <div class="skill-card">
+
                 <i class="fab fa-java"></i>
+
                 <h3>Java</h3>
-            </div>
-            
-            <div class="skill-card">
-                <i class="fab fa-java"></i>
-                <h3>C Programming</h3>
+
+                <p>85%</p>
+
+                <div class="progress">
+
+                    <span class="java-progress"></span>
+
+                </div>
+
             </div>
 
+
+            <!-- C -->
+
             <div class="skill-card">
-                <i class="fab fa-java"></i>
+
+                <i class="fas fa-c"></i>
+
+                <h3>C</h3>
+
+                <p>80%</p>
+
+                <div class="progress">
+
+                    <span class="c-progress"></span>
+
+                </div>
+
+            </div>
+
+
+            <!-- C++ -->
+
+            <div class="skill-card">
+
+                <i class="fas fa-code"></i>
+
                 <h3>C++</h3>
+
+                <p>80%</p>
+
+                <div class="progress">
+
+                    <span class="cpp-progress"></span>
+
+                </div>
+
             </div>
+
+
+            <!-- WordPress -->
+
+            <div class="skill-card">
+
+                <i class="fab fa-wordpress"></i>
+
+                <h3>WordPress</h3>
+
+                <p>88%</p>
+
+                <div class="progress">
+
+                    <span class="wordpress-progress"></span>
+
+                </div>
+
+            </div>
+
+
+            <!-- GitHub -->
+
+            <div class="skill-card">
+
+                <i class="fab fa-github"></i>
+
+                <h3>Git & GitHub</h3>
+
+                <p>80%</p>
+
+                <div class="progress">
+
+                    <span class="github-progress"></span>
+
+                </div>
+
+            </div>
+
         </div>
 
-    </div>
+    </section>
 
-</section>
-<!-- Projects Section -->
-<section id="projects" class="projects">
 
-    <div class="projects-content">
 
-        <h2>My Projects</h2>
+    <!-- =========================
+            PROJECTS SECTION
+    ========================== -->
 
-        <div class="project-box">
+    <section class="projects section" id="projects">
+
+        <div class="section-title">
+
+            <p>My Recent Work</p>
+
+            <h2>
+                My <span>Projects</span>
+            </h2>
+
+        </div>
+
+
+        <div class="projects-container">
+
+
+            <!-- Portfolio Project -->
 
             <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>
-                    A personal portfolio website built using HTML and CSS.
-                </p>
+
+                <div class="project-image">
+
+                    <img src="image/portfolio-project.jpg"
+                        alt="Personal Portfolio">
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        Personal Portfolio
+                    </h3>
+
+                    <p>
+                        A responsive personal portfolio website
+                        created using HTML, CSS and JavaScript.
+                    </p>
+
+
+                    <div class="project-buttons">
+
+                        <a href="https://shifasiddiqu30.github.io/shifa-portfolio/"
+                            target="_blank"
+                            class="project-btn">
+
+                            Live Demo
+
+                        </a>
+
+
+                        <a href="https://github.com/shifasiddiqu30/shifa-portfolio"
+                            target="_blank"
+                            class="project-btn outline">
+
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="project-card">
-                <h3>L&L Cafe Website</h3>
-                <p>
-                    A cafe website design with menu, services and contact page.
-                </p>
-            </div>
+
+            <!-- L&L Cafe -->
 
             <div class="project-card">
-                <h3>Student Management System</h3>
-                <p>
-                    A Java-based project for managing student records.
-                </p>
+
+                <div class="project-image">
+
+                    <img src="image/ll-cafe-project.jpg"
+                        alt="L&L Cafe Website">
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        L&L Cafe Website
+                    </h3>
+
+                    <p>
+                        A modern cafe website featuring menu,
+                        gaming zone, events and contact sections.
+                    </p>
+
+
+                    <div class="project-buttons">
+
+                        <a href="#"
+                            class="project-btn">
+
+                            Live Demo
+
+                        </a>
+
+
+                        <a href="#"
+                            class="project-btn outline">
+
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Java Project -->
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <img src="image/java-project.jpg"
+                        alt="Java Project">
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        Student Management System
+                    </h3>
+
+                    <p>
+                        A Java-based project designed to
+                        manage student records efficiently.
+                    </p>
+
+
+                    <div class="project-buttons">
+
+                        <a href="#"
+                            class="project-btn">
+
+                            View Project
+
+                        </a>
+
+
+                        <a href="#"
+                            class="project-btn outline">
+
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
-<!-- Contact Section -->
-<section id="contact" class="contact">
 
-    <div class="contact-content">
 
-        <h2>Contact Me</h2>
+    <!-- =========================
+            EDUCATION SECTION
+    ========================== -->
 
-        <form>
+    <section class="education section" id="education">
 
-            <input type="text" placeholder="shifa siddiqui" required>
+        <div class="section-title">
 
-            <input type="email" placeholder="shifasiddiqui30112006@gmail.com" required>
+            <p>My Academic Journey</p>
 
-            <input type="text" placeholder="Enter Subject" required>
+            <h2>
+                My <span>Education</span>
+            </h2>
 
-            <textarea rows="6" placeholder="How Can I Help you"></textarea>
+        </div>
 
-            <button type="submit" class="btn">
-                Send Message
-            </button>
 
-        </form>
+        <div class="timeline">
 
-    </div>
 
-</section>
+            <!-- Education 1 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-content">
+
+                    <span>
+                        2024 - Present
+                    </span>
+
+                    <h3>
+                        Computer Engineering
+                    </h3>
+
+                    <h4>
+                        New Horizon Institute
+                    </h4>
+
+                    <p>
+                        Currently pursuing Computer Engineering
+                        and developing skills in programming,
+                        web development and software development.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Education 2 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-content">
+
+                    <span>
+                        Learning & Development
+                    </span>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <h4>
+                        HTML • CSS • JavaScript
+                    </h4>
+
+                    <p>
+                        Building responsive websites and
+                        learning modern web development practices.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Education 3 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-content">
+
+                    <span>
+                        Programming
+                    </span>
+
+                    <h3>
+                        Java, C & C++
+                    </h3>
+
+                    <h4>
+                        Programming & Problem Solving
+                    </h4>
+
+                    <p>
+                        Practicing programming languages and
+                        developing academic mini projects.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+            CERTIFICATES SECTION
+    ========================== -->
+
+    <section class="certificates section" id="certificates">
+
+        <div class="section-title">
+
+            <p>My Achievements</p>
+
+            <h2>
+                My <span>Certificates</span>
+            </h2>
+
+        </div>
+
+
+        <div class="certificates-container">
+
+
+            <!-- Certificate 1 -->
+
+            <div class="certificate-card">
+
+                <div class="certificate-icon">
+
+                    <i class="fas fa-certificate"></i>
+
+                </div>
+
+
+                <div class="certificate-content">
+
+                    <h3>
+                        Web Development Certificate
+                    </h3>
+
+                    <p>
+                        Certificate in Web Development and
+                        modern website development technologies.
+                    </p>
+
+
+                    <a href="certificates/web-development.pdf"
+                        target="_blank"
+                        class="certificate-btn">
+
+                        <i class="fas fa-eye"></i>
+
+                        View Certificate
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Certificate 2 -->
+
+            <div class="certificate-card">
+
+                <div class="certificate-icon">
+
+                    <i class="fas fa-award"></i>
+
+                </div>
+
+
+                <div class="certificate-content">
+
+                    <h3>
+                        Java Programming Certificate
+                    </h3>
+
+                    <p>
+                        Certificate in Java Programming and
+                        Object-Oriented Programming.
+                    </p>
+
+
+                    <a href="certificates/java-certificate.pdf"
+                        target="_blank"
+                        class="certificate-btn">
+
+                        <i class="fas fa-eye"></i>
+
+                        View Certificate
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Certificate 3 -->
+
+            <div class="certificate-card">
+
+                <div class="certificate-icon">
+
+                    <i class="fas fa-code"></i>
+
+                </div>
+
+
+                <div class="certificate-content">
+
+                    <h3>
+                        C / C++ Certificate
+                    </h3>
+
+                    <p>
+                        Certificate in C and C++ programming
+                        fundamentals.
+                    </p>
+
+
+                    <a href="certificates/c-cpp-certificate.pdf"
+                        target="_blank"
+                        class="certificate-btn">
+
+                        <i class="fas fa-eye"></i>
+
+                        View Certificate
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+            CONTACT SECTION
+    ========================== -->
+
+    <section class="contact section" id="contact">
+
+        <div class="section-title">
+
+            <p>Let's Connect</p>
+
+            <h2>
+                Contact <span>Me</span>
+            </h2>
+
+        </div>
+
+
+        <div class="contact-container">
+
+
+            <!-- Contact Information -->
+
+            <div class="contact-info">
+
+                <h3>
+                    Let's Work Together
+                </h3>
+
+                <p>
+                    Have a project idea or want to connect?
+                    Feel free to reach out to me.
+                </p>
+
+
+                <!-- Email -->
+
+                <div class="contact-item">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <div>
+
+                        <h4>
+                            Email
+                        </h4>
+
+                        <a href="mailto:shifasiddiqui30112006@gmail.com">
+
+                            shifasiddiqui30112006@gmail.com
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GitHub -->
+
+                <div class="contact-item">
+
+                    <i class="fab fa-github"></i>
+
+                    <div>
+
+                        <h4>
+                            GitHub
+                        </h4>
+
+                        <a href="https://github.com/shifasiddiqu30"
+                            target="_blank">
+
+                            github.com/shifasiddiqu30
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LinkedIn -->
+
+                <div class="contact-item">
+
+                    <i class="fab fa-linkedin"></i>
+
+                    <div>
+
+                        <h4>
+                            LinkedIn
+                        </h4>
+
+                        <a href="#"
+                            target="_blank">
+
+                            LinkedIn Profile
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required>
+
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required>
+
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                    required>
+
+
+                <textarea
+                    rows="6"
+                    placeholder="Your Message"
+                    required>
+                </textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+            FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>
+                Shifa<span>.</span>
+            </h3>
+
+            <p>
+                Computer Engineering Student |
+                Web Developer
+            </p>
+
+
+            <div class="footer-social">
+
+
+                <a href="https://github.com/shifasiddiqu30"
+                    target="_blank">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+
+                <a href="#"
+                    target="_blank">
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                </a>
+
+
+                <a href="#"
+                    target="_blank">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+
+                <a href="mailto:shifasiddiqui30112006@gmail.com">
+
+                    <i class="fas fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Shifa Siddiqui. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Back To Top -->
+
+    <a href="#home"
+        class="back-to-top">
+
+        <i class="fas fa-arrow-up"></i>
+
+    </a>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
