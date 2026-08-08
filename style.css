@@ -2621,3 +2621,448 @@ nav {
         padding: 18px 13px;
     }
 }
+/* =====================================================
+   PART 5 — FOOTER + BACK TO TOP + FINAL RESPONSIVE FIX
+===================================================== */
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    width: 100%;
+
+    background: #050c16;
+
+    border-top: 1px solid rgba(56, 189, 248, 0.10);
+
+    padding-top: 45px;
+}
+
+
+/* Footer Content */
+
+.footer-content {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 0 8% 35px;
+
+    text-align: center;
+}
+
+
+/* Footer Logo */
+
+.footer-content h3 {
+    color: #ffffff;
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+.footer-content h3 span {
+    color: #38bdf8;
+}
+
+
+/* Footer Description */
+
+.footer-content > p {
+    color: #64748b;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   FOOTER SOCIAL
+===================================================== */
+
+.footer-social {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(56, 189, 248, 0.45);
+
+    border-radius: 50%;
+
+    color: #38bdf8;
+
+    font-size: 16px;
+
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #38bdf8;
+
+    color: #06111e;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(56, 189, 248, 0.18);
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+.footer-bottom {
+    width: 100%;
+
+    padding: 18px 6%;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-bottom p {
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   BACK TO TOP
+===================================================== */
+
+.back-to-top {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #38bdf8;
+
+    border-radius: 50%;
+
+    background: #38bdf8;
+
+    color: #06111e;
+
+    font-size: 16px;
+
+    z-index: 999;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s ease;
+}
+
+.back-to-top:hover {
+    background: transparent;
+
+    color: #38bdf8;
+
+    transform: translateY(-5px);
+}
+
+
+/* =====================================================
+   GLOBAL FINAL FIXES
+===================================================== */
+
+.left,
+.right,
+.hero-content,
+.hero-image,
+.about-content,
+.skills-container,
+.projects-container,
+.timeline,
+.certificates-container,
+.contact-container,
+.contact-form {
+    min-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    overflow-wrap: break-word;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+
+        right: 18px;
+        bottom: 18px;
+
+        font-size: 14px;
+    }
+
+    footer {
+        padding-top: 38px;
+    }
+
+    .footer-content {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* Prevent horizontal scrolling */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+
+        overflow-x: hidden;
+    }
+
+
+    /* Section titles */
+
+    .section-title {
+        margin-bottom: 38px;
+    }
+
+    .section-title p {
+        font-size: 11px;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding-top: 35px;
+    }
+
+    .footer-content {
+        padding-bottom: 28px;
+    }
+
+    .footer-content h3 {
+        font-size: 25px;
+    }
+
+    .footer-content > p {
+        font-size: 11px;
+    }
+
+    .footer-social {
+        gap: 9px;
+
+        margin-top: 17px;
+    }
+
+    .footer-social a {
+        width: 37px;
+        height: 37px;
+
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        padding: 15px 5%;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+
+        line-height: 1.6;
+    }
+
+
+    /* Back to top */
+
+    .back-to-top {
+        width: 38px;
+        height: 38px;
+
+        right: 14px;
+        bottom: 14px;
+
+        font-size: 13px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES — 360px / 375px
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .section-title {
+        margin-bottom: 32px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .section-title p {
+        font-size: 10px;
+    }
+
+
+    /* Footer */
+
+    .footer-content h3 {
+        font-size: 23px;
+    }
+
+    .footer-content > p {
+        font-size: 10px;
+    }
+
+    .footer-social {
+        gap: 7px;
+    }
+
+    .footer-social a {
+        width: 34px;
+        height: 34px;
+
+        font-size: 13px;
+    }
+
+    .footer-bottom p {
+        font-size: 9px;
+    }
+
+
+    /* Back to top */
+
+    .back-to-top {
+        width: 35px;
+        height: 35px;
+
+        right: 12px;
+        bottom: 12px;
+    }
+}
+
+
+/* =====================================================
+   TOUCH DEVICE FIX
+===================================================== */
+
+@media (hover: none) {
+
+    .skill-card:hover,
+    .project-card:hover,
+    .certificate-card:hover,
+    .info-card:hover,
+    .timeline-content:hover {
+        transform: none;
+
+        box-shadow: none;
+    }
+}
+
+
+/* =====================================================
+   FINAL IMAGE SAFETY
+===================================================== */
+
+img {
+    max-width: 100%;
+}
+
+
+/* =====================================================
+   FINAL BUTTON SAFETY
+===================================================== */
+
+.btn,
+.project-btn,
+.certificate-btn {
+    text-align: center;
+
+    white-space: normal;
+}
+
+
+/* =====================================================
+   FINAL MOBILE WIDTH SAFETY
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .hero,
+    .about,
+    .skills,
+    .projects,
+    .education,
+    .certificates,
+    .contact {
+        width: 100%;
+        max-width: 100%;
+
+        overflow: hidden;
+    }
+
+    .hero-content,
+    .about-content,
+    .skills-container,
+    .projects-container,
+    .certificates-container,
+    .contact-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
